@@ -56,7 +56,7 @@ div.objectives {
 div.information {
 	color: blue;
 }
-	
+
 
 nav ul li{
 	display: inline-block;
@@ -94,7 +94,7 @@ div.footer {
 	color: #001;
 	clear: both;
 	float: none;
-} 
+}
 
 h6 {
 	text-align: center;
@@ -110,7 +110,7 @@ div.seasons {
 	margin-top: 30px;
 	clear: both;
 }
- 
+
 header img {
 	/*margin-left: 30px;*/
 	margin-bottom: 15px;
@@ -134,7 +134,7 @@ header a{
 }
 div.content {
 	margin-bottom: 20px;
-	
+
 }
 p.mountains {
 	float: left;
@@ -153,4 +153,3 @@ p.winter {
 .text-center{
 	text-align: center;
 }
-  

@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <html>
   <head>
-	  <title>My First Project</title>
-	  <link href="webproject1.css" rel="stylesheet" type="text/css" />
-  </head> 
+	  <title>CANADA GUIDES</title>
+	  <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
 <body>
 	  <div class="wrap">
-		<h1>CANADA GUIDES</h1>
-	<header>
-		<a href"#"><img src="images/canada.flag.gif" width="400" height="260"></a>
-		<a href"#"><img src="images/canada_map.gif" width="400" height="260" ></a>
-	</header>
-	    <nav> 
+      <header class="about">
+      <div class="img">
+       <a href"#"><img src="images/canada.flag.gif" alt="ca" width="400" height="200"></a>
+       <a href"#"><img src="images/canada_map.gif" width="400" height="200" ></a>
+      </div>
+     </header>
+    
+    <div class="title">
+		  <h1>CANADA GUIDES</h1>
+      <p><i class="fa fa-facebook-official" style="font-size:48px;color:white;"></i>
+        <i class="fa fa-linkedin-square" style="font-size:40px;color:white;"></i>
+       <i class="fa fa-rss-square" style="font-size:40px;color:white;"></i>
+        <i class="fa fa-google-plus-square" style="font-size:40px;color:white;"></i>
+
+      </p>
+
+     </div>
+
+<!--	<header class="about"> 
+    <div class="img">
+		   <a href"#"><img src="images/canada.flag.gif" width="400" height="200"></a>
+		   <a href"#"><img src="images/canada_map.gif" width="400" height="200" ></a>
+    </div>
+	</header> -->
+	    <nav class="main">
 	    	<ul class="home">
-
-	    	  <li><a href="#home">Home</a></li>
-	    	  <li><a href="#contact">Contact</a></li>
-	    	  <li><a href="#resources">Resources</a></li>
-
+           <a href="index.html"><li>Home</li></a>
+	    	   <a href="about.html"><li>About Us</li></a>
+	    	   <a href="contact.html"><li>Contact Us</li></a>
+	    	   <a href="#our blog"><li>Our Blog</li></a>
 	    	 </ul>
+         <div class="handle"><i class="fa fa-bars">Menu</i></div>
 	     </nav>
-	
-         <section>   
+
+       <form id="searchbox" action="">
+        <input id="search" type="text" placeholder="Type here">
+        <input id="submit" type="submit" value="Search">
+      </form>
+
+         <section>
+          <div class="section">
             <h2>OUR GOAL</h2>
               <p class="text-center">Is <span style="color:blue;font-weight:bold;font-style:italic;">to help, motivate, and support</span> other people who also dream to come in Canada...</p>
+              <p class="text-center"><i class="fa fa-thumbs-up fa-4x"></i> </p>
+            </div> 
          </section>
-     
 
-       <hr size="3" width="100%" noshade style="color:#000000" align="left" />
+
+       <!--<hr size="3" width="100%" noshade style="color:#000000" align="left" /> -->
 
 
 	     <div class="content-area">
+          <div class="content">
 
-	     	<article>
+	        	<article class="topcontent">
                <p>Canada is a country in the northern part of  <span style="color:red;font-weight:bold;font-style:italic;">North America</span>. Canadians are so kind. A place for a better future.Canada is such a gorgeous country, it's no wonder that it is one of the top ten most popular places for international tourists. Spend your loonies here, travel in Canada! Canada is the World's Most Educated Country: over half its residents have college degrees.</p>
-    
+               
 
                <p><b><i>About Canada:</i></b></p>
                <blockquote cite="https://en.wikipedia.org/wiki/History_of_Canada">Over centuries, elements of Aboriginal, French, British and more recent immigrant customs have combined to form a Canadian culture. Canadian culture has also been strongly influenced by its linguistic, geographic and economic neighbour, the United States. Since the conclusion of the Second World War, Canadians have supported multilateralism abroad and socioeconomic development domestically. Canada currently consists of ten provinces and three territories and is governed as a parliamentary democracy and a constitutional monarchy with Queen Elizabeth II as its head of state.
                </blockquote>
              </article>
-            </div>
 
+            </div>
+        </div> <!-- end of content area -->
            <aside>
 
            <div class="objectives">
-          
+
            <h2>OUR OBJECTIVES</h2>
 
-           <p> To help people understand more and know about the life in Canada and help those who are interested to come to Canada in the future to give information for the requirements in applying.</p>
+           <p class="objective"> To help people understand more and know about the life in Canada and help those who are interested to come to Canada in the future to give information for the requirements in applying.</p>
+
            </div>
            </aside>
+          <hr size="3" width="100%" noshade style="color:#000000" align="left" /> 
+
 
            <h3>REQUIREMENTS FOR APPLYING:</h3>
            <p><b><i>(Caregiver)</i></b></p>
@@ -84,7 +119,7 @@
                          <li> You must prove that you have enough money to pay for your:</li>
                            <ol>
                                 <li><span style="color:blue;font-weight:bold;font-style:italic;">tution fees</span></li>
-                                <li><span style="color:blue;font-weight:bold;font-style:italic;">living expenses for yourself and any family  members who come with you to Canada and</</span></li>
+                                <li><span style="color:blue;font-weight:bold;font-style:italic;">living expenses for yourself and any family  members who come with you to Canada and</span></li>
                                 <li><span style="color:blue;font-weight:bold;font-style:italic;">return transportation for yourself and any family members who come with you to Canada.</span></li>
 
                             </ol>
@@ -96,7 +131,7 @@
               <p>Most people or newcomers are exited about their new life in Canada.But after in a short time they get worried and irritable because its often difficult to find jobs,housing, and school.New comers may feel anxiuos or depressed but their is also a lot of things to know and to be prepared. when you start to discover the country it is a great opportunity to start a new life with such a great people and cities.</p>
               <p><b><i>Things you should know...</i></b></p><b/>
                 <ul>
-                	<li><a href="http://www.servicecanada.gc.ca/eng/sc/sin/index.shtml?utm_source=Vanity%20URL%20-%20DDN&utm_medium=Offline&utm_term=SIN%20Card%20Termination%20(SCTOP)%202013%2F2014&utm_content=Dec%202013%2C%20Eng&utm_campaign=SIN%20Card%20Termination%20(SCTOP)">SIN(Social Insurance System)</a></li>
+                	<li><a href="http://www.servicecanada.gc.ca/eng/sc/sin/index.shtml?utm_source=Vanity%20URL%20-%20DDNutm_medium=Offline&utm_term=SIN%20Card%20Termination%20(SCTOP)%202013%2F2014&utm_content=Dec%202013%2C%20Eng&utm_campaign=SIN%20Card%20Termination%20(SCTOP)">SIN(Social Insurance System)</a></li>
                 	<li><a href="http://www.canadian-healthcare.org/">Health Care</a></li>
                 	<li><a href="http://www.justice.gc.ca/eng/csj-sjc/" >The Legal System</a></li>
                 	<li><a href="http://www.cic.gc.ca/english/citizenship/" />Government and Citizenship</a></li>
@@ -114,25 +149,45 @@
                 	Canada Immigration and citizenship</a></li>
                   </ul>
 
+                  <h5>Canada Government and Citizenship</h5>
+                  <p>Right and responsibilities:</p>
+                  <p>Canadian Citizens have rights and responsibilities.Some of right and responsibilities include:</p>
+  
+                    <ul>
+                      <li><i class="fa fa-check-square-o">
+                       freedom of conscience and religion</i></li>
+                      <li><i class="fa fa-check-square-o">freedom of thought, belief, opinion, and expression, including freedom of speech and of the press</i></li>
+                      <li><i class="fa fa-check-square-o">freedom of peaceful assembly</i></li>
+                    </ul>
+
+                  <p>Citizen are Responsible for:</p>
+                  <ul>
+                    <li><i class="fa fa-check-square-o">Obeying the law - Individuals and government are regulated by laws. No person or group ae above the law.</i></li>
+                    <li><i class="fa fa-check-square-o">Taking responsibility for onself and one's family - Getting a job, taking care of one's family and working hard in keeping with one's abilities are important Canadian Values.</i></li>
+                    <li><i class="fa fa-check-square-o">Serving on jury - When called to do so,you are legally required to serve on a jury. A jury is an impartial group of citizens who decide if someone is innoccnt or guilty of commiting a crime</i></li>
+                    <li><i class="fa fa-check-square-o">Voting in election - The right to vote comes with a responsibility to vote in federal, provincial,or terretorial and local elections</i></li>
+                    <li><i class="fa fa-check-square-o">Helping others in the community - Millions of volunteers freely donate their time to help others without pay. Volunteering is an excellent way to gain useful skills and develop friends and contacts</i></li>
+                  </ul>
+
                 </div>
-       
-        
+
+
         <h6>City of Canada</h6>
-         
+
         <figure>
          <div class="content">
-		 <p class="mountains"><img src="images/backround-photo.jpg" width="330" height="250" image-align="center" style="float: right;" /> 
+		 <p class="mountains"><img src="images/backround-photo.jpg" width="304" height="250" image-align="center" style="float: right;" />
 		 	Just living in a place like this would also give us the opportunity that we need to be with our family and just observe and take in the exquisite beauty of the mountains and land around us. Therefore, if we had a choice, we know we place in life and our dream to be surrounded by mountains, wildlife, and all of the things in nature that we have been taught and just grown to love in our life. </p>
 		  </div>
 		 <div class="snow_image">
-		 <p class="winter"><img src="images/snow.gif" width="304" height="228" style="float: right;"/> 
+		 <p class="winter"><img src="images/snow.gif" width="304" height="228" style="float: right;"/>
 		 Canadians embrace winter and we invite you do the same. When the seasons change and snow starts to fall, a plethora of unique recreation comes to life. Strap on snowshoes and stomp across powdery glades. Hire a dogsled musher to show you the ropes of traditional winter travel. Choose horsepower over dog-power and straddle a snowmobile. Ice skate across a frozen river hand-in-hand with your companion. Tour the luge tracks and ski jumps from two Olympic Winter Games. From the Aurora skies of the north, to the misty west coast, to the frigid Prairies, to the snowy expanses of Ontario and Quebec, to the blustery Atlantic it's time to take advantage of the cold months while they last. Explore the best of winter in Canada.
 		</p>
 		  </div>
         </figure>
-        
+
 		<div class="seasons"><p>There are so many nice places to visit in Canada. The mountains are amazing. Canada has for seasons, <span style="color: blue;font-weight:bold;font-style:italic;"> Winter, Summer, Spring and Fall.</p></div>
-	    
+
         <div class="footer">&copy 2016 Arlene Desamito.</div>
 
 

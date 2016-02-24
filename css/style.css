@@ -10,6 +10,10 @@ body {
 	padding: 0;
 
 }
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('font-family/OpenSans-Regular.ttf');
+}
 /*.title {
        /*padding: 1.0121457489878542510121457489879%;*/
    /* background-color: #399077;
@@ -27,13 +31,14 @@ body {
 	padding: 30px 0;
 	color: white;
 	text-align: center;
+	font-size: 32px;
 }
 
 a{
 	text-decoration: none;
 	color: inherit;
 }
-nav.main ul.home{
+nav.main ul.main-menu{
 	background-color: #399077;
 	overflow: hidden;
 	padding: 0;
@@ -42,7 +47,7 @@ nav.main ul.home{
 	height: auto;
 }
 
-nav.main ul.home li {
+nav.main ul.main-menu li {
 	display: inline-block;
 	padding: 10px;
 	color: white;
@@ -104,7 +109,7 @@ header a{
 	width: 100%;
 }
 
-nav.main a:link, ul.home a:visited{
+nav.main a:link, ul.main-menu a:visited{
 	background-color: #399077;
 	height: 40px;
 	color: white;
@@ -140,7 +145,7 @@ nav.main .active a:link, nav.active a:visited {
 }*/
 
 h2, h3 {
-	color: blue;
+	color: white;
 	position: relative;
 	right: auto;
 	text-align: left;
@@ -148,7 +153,12 @@ h2, h3 {
 h2, h4 {
 	text-align: center;
 	color: blue;
+	font-size: 90%;
+	font-style: bold;
 
+}
+p.objective {
+	color: white;
 }
 h5 {
 	text-align: center;
@@ -195,7 +205,7 @@ nav ul li{
 	margin-left: 10px;
 	margin-top: 20px;
 	margin-bottom: 50px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 ul, ol, li {
@@ -329,10 +339,15 @@ main.heading {
 	background-color: white;
 }
 .container {
-	 	display: flex;
+	display: flex;
     width: 100%;
     height: 100%;
     background-color: white;
+    justify-content: center;
+    background-image: linear-gradient(
+      to right, #a1dbff 0%, #f0f9ff 16%, #a1dbff 33%,
+      #f0f9ff 50%, #a1dbff 67%, #f0f9ff 84%, #a1dbff 100%
+   );
 	 }
 	 .item {
     background-color: cornflowerblue;
@@ -340,6 +355,8 @@ main.heading {
     height: 40px;
     margin: 10px;
     color: white;
+    text-align: center;
+ 
 }
 
   
@@ -347,14 +364,14 @@ main.heading {
 {
     background-color: #eaf8fc;
     background-image: linear-gradient(#fff, #d4e8ec);
-    border-radius: 20px;    
+    border-radius: 10px;    
     border-width: 1px;
     border-style: solid;
     border-color: #c4d9df #a4c3ca #83afb7;            
     width: 500px;
     height: 25px;
     padding: 10px;
-    margin: 100px auto 50px;
+    margin: 30px auto 15px;
     overflow: hidden; /* Clear floats */
 }
 #submit:hover {       
@@ -371,25 +388,74 @@ main.heading {
 #submit::-moz-focus-inner {
        border: 0;  /* Small centering fix for Firefox */
 }
-
-  
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 	body{
 		background-color: #cbebff;
 	    width: 100%
 	 }
-	 nav.main ul.home {
+	 nav.main ul.main-menu {
 	 	max-height: 0px;
 	 }
-	 nav.main ul.home li{
+	 /*nav.main ul.home li{
 	 	box-sizing: border-box;
 	 	width: 100%;
 	 	padding: 10px;
-	 	text-align: left;
+	 	text-align: left;*/
 	 }
-	 .handle {
-	 	display: block;
+	/* .handle {
+	 	display: block;*/
+	 }
+	 .about {
+	 	width: 100%;
+	 	float: left;
+	 	clear: both;
+	 	margin-top: 5%;
+	 }
+	 .main {
+	 	width: 100%;
+	 	/*margin-top: 20%;*/
+	 }
+	 .section {
+	 	width: 100%;
+	 	float: right;
+	 }
+	 .content-area {
+	 	width: 100%;
+	 }
+	 .section {
+	 	margin-right: 0;
+	 	float: left;
+	 }
+	 .objectives {
+	 	margin-right: 0;
+	 	float: left;
+	 }
+	 #searchbox {
+	 	float: left;
+	 	margin-top: 0;
+	 	width: 300px;
+	 
+	} 
+}
+
+  
+
+@media screen and (max-width: 720px) {
+	body{
+		background-color: #cbebff;
+	    width: 100%
+	 }
+	 nav.main ul.main-menu {
+	 	max-height: 0px;
+	 }
+	 /*nav.main ul.home li{
+	 	box-sizing: border-box;
+	 	width: 100%;
+	 	padding: 10px;
+	 	text-align: left;*/
+	 }
+	 /*.handle {
+	 	display: block;*/
 	 }
 	 .about {
 	 	width: 100%;
@@ -427,7 +493,7 @@ main.heading {
    	 width: 100%;
    }
 }*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
 	body{
 		background-color: #cbebff;
 	    width: 100%

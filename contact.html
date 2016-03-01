@@ -2,11 +2,16 @@
 <html>
 <head>
 	<title>All about Contact</title>
-  <link rel="stylesheet" href="css/reset.css" type="text/css" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="only screen"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"  media="only screen"/>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+   <div class"wrap">
+         <img src="images/canada.flag.gif" width="50px" height="107px" />
+    </div>
   <div class="title">
     <h1>Contact Details</h1>
   </div>
@@ -17,15 +22,13 @@
           <li><a href="index.html">Home</a></li>
 	    	  <li><a href="about.html">About Us</a></li>
 	    	  <li><a href="contact.html">Contact Us</a></li>
-	    	  <li><a href="#ourblog">Our Blog</a></li>
 
 	    	 </ul>
-         <div class="handle">MENU</div>
+         <!--<div class="handle">MENU</div> -->
 	     </nav>
 	<header>
-    
-	</header>
-
+  </header>
+  
 
 <div class="content-area">
     <div class="content">
@@ -38,12 +41,21 @@
 	  	    <h4>CONTACT NUMBER:</h4>
 	  	    <p><i class="fa fa-phone"></i>
           +01 604 2022 901</p>
-         <p class="emailadd"><a href="mailto:arlene.desamito.ad@gmail.com">Email Us</a></p>
+
+          <p>Get in touch with me anytime if you have any questions. Want to make inquiry or say hello.</p>
+           </div>
+
 	      </article>
       </div>
   </div>
-
-          <aside>
+      
+      <section>
+          <div class="section">
+      <!--<div class="email"> -->
+      <p class="email_add"><a href="mailto:arlene.desamito.ad@gmail.com">Email Us</a></p>
+      </div>
+      </section>
+         <!-- <aside>
 	          <div class="container">
                    <div class="item">ADDRESS</div>
                    <div class="item">Email:</div>
@@ -51,28 +63,50 @@
                    <div class="item">Job:</div>
                    <div class="item">Phone:</div>
                </div>
-          </aside>
+          </aside> -->
        <section>
           <div class="section">
             <form>
+              <legend>Personal information:</legend>
              First name:<br>
-             <input type="text" name="firstname">
+             <input type="text" name="firstname" size="40%">
              <br>
              Last name:<br>
-             <input type="text" name="lastname">
+             <input type="text" name="lastname" size="40%">
              <br>
-             Email:<br>
-             <input type="text" name="emailadd">
-             <br>
-             Phone:<br>
-             <input type="text" name="phonenumber">
+             <div class="row">
+            Your email:<br>
+            <input id="email" class="input" name="email" type="text" value="" size="40%" /><br>
+             Phone number:<br>
+             <input type="text" name="phonenumber" size="40%">
              <br><br>
+
+             <div class="row">
+            <label for="message">Your message:</label><br />
+            <input type="text" class="input" name="message" rows="7" cols="40%"/><br />
+            </div>
              <input type="submit" value="Submit">
             </form>
           </div>
         </section>
-
-
+       <hr>
+       <sidebar>
+        <nav>
+        <ul>
+           <a href="#"><li>Our Services</li></a>
+           <a href="#"><li>Our methods</li></a>
+           <a href="#"><li>Testimonials</li></a>
+           <a href="#"><li>FAQ</li></a>
+         </ul>
+       </sidebar>
+       <div class="icons">
+       <h4>Connect Online</h4>
+       <p class="icons"><i class="fa fa-facebook-official" style="font-size:40px;color:white;"></i>
+        <i class="fa fa-linkedin-square" style="font-size:40px;color:white;"></i>
+       <i class="fa fa-rss-square" style="font-size:40px;color:white;"></i>
+        <i class="fa fa-google-plus-square" style="font-size:40px;color:white;"></i>
+      </p>
+      </div>
     <div class="footer">&copy 2016 Arlene Desamito.</div>
         
 </body>

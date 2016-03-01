@@ -245,32 +245,32 @@ ol{
 
 
 article.topcontent {
-  width: 100%;
+  width: 50%;
   margin-right: 5%;
   float: left;
   padding: 0.5%;
   padding-top: 1.5%
   font-size: 0.9em;
   line-height: 1.5em;
-  background-color: DeepSkyBlue;
-   opacity: 0.9;
+  background-color: white;
+  
 
 }
 sidebar, .sidebar-content {
-  width: 92%;
+  width: 98%;
   margin-right: 2%;
   float: right;
   clear: both;
   /*padding: 1%;*/
   padding-top: 10px;
-  font-size: 1.4em;
+  font-size: 1.1em;
   line-height: 1em;
   background-color: DeepSkyBlue;
    opacity: 0.9;
 }
  
 aside, section{
- /*width: 35%;*/
+   width: 35%;
   float: right;
   padding-left: 1%;
   padding-top: 2%;
@@ -451,11 +451,18 @@ main.heading {
 #submit::-moz-focus-inner {
        border: 0;  /* Small centering fix for Firefox */
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
 	body{
 		background-color: #cbebff;
 	    width: 100% 
 	 }
+	 article.topcontent {
+      width: 100%;
+	 }
+	 aside, section{
+      width: 90%;
+    }
+
 	nav.main ul.main-menu {
 	 	max-height: 100%;
 	 }
@@ -516,7 +523,7 @@ main.heading {
 		float: left;
 	}
 	.item {
-		width: 90%;
+		width: 100%;
 		float: left;
 	}
 	p {
@@ -534,6 +541,15 @@ main.heading {
 	 nav.main ul.main-menu {
 	 	max-height: 100%;
 	 }
+
+	 article.topcontent {
+      width: 50%;
+      float: left;
+	 }
+	 aside, section{
+      width: 45%;
+      float: right;
+     }
 	 /* nav.main ul.home li{
 	 	box-sizing: border-box; 
 	 	width: 100%;
@@ -586,11 +602,22 @@ main.heading {
    	 width: 100%;
    }
 }*/
-@media only screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	body{
 		background-color: #cbebff;
 	    width: 100%
 	 }
+
+	 article.topcontent {
+     width: 50%;
+     float: left;
+     clear: both;
+     }
+     aside, section{
+      width: 35%;
+      float: right;
+      clear: both;
+     }
 
 	 .about {
 	 	width: 100%;

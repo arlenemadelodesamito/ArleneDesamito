@@ -1,6 +1,6 @@
 html, body, h1, ul.home, h2, h3, h2, h4, h5, h6, nav, ul, li, .wrap, .about, .img, #searchbox, #submit
 .title .main .handle section .section .content-area .content blockquote .topcontent aside .objectives aside span .information .content .snow_image 
-.mountain .seasons .maincontent .title .paragraph .content .container .item, sidebar .sidebar{
+.mountain .seasons .maincontent .title .paragraph .content .container .item, sidebar .sidebar, .container, .item{
   margin: 0;
 	padding: 0;
 	border: 0;
@@ -9,7 +9,7 @@ html, body, h1, ul.home, h2, h3, h2, h4, h5, h6, nav, ul, li, .wrap, .about, .im
 	vertical-align: baseline;
 }
 article, aside, figcaption, figure,
-footer, header, nav, section {
+footer, header, nav, section, .container, .item {
 	display: block;
 }
 
@@ -21,7 +21,7 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p{
 	font-size: 100%;
 	font-weight: normal;
 }

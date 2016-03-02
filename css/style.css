@@ -31,7 +31,8 @@ input[type="text"]{
 
 }*/
 .title {
-	background-color: #005c48;
+	background-color: blue;
+	/*background-color: #005c48;*/
 	width: 100%;
 	padding: 30px 0;
 	color: white;
@@ -47,7 +48,9 @@ p.icons {
 	background-color: blue;
 }
 nav.main ul.main-menu{
-	background-color: #399077;
+   background-color: DeepSkyBlue;
+   opacity: 0.9;
+	/*background-color: #399077;*/
 	overflow: hidden;
 	padding: 0;
 	text-align: center;
@@ -61,7 +64,7 @@ nav.main ul.main-menu li {
 	color: white;
 }
 nav.main {
-	border-right: 2px solid #548879d;
+	border-right: 2px solid blue;
 }
 
 
@@ -69,7 +72,7 @@ header{
 
 	/*border: 2px solid red;*/
 	/*padding: inherit;*/
-	background-color: #005c48;
+	background-color: blue;
 	width: 150px;
 	/*height: 50%;*/
 	/*margin: 2% 1%;*/
@@ -175,6 +178,11 @@ h2, h4, h5, div.rights{
 	font-style: bold;
 
 }
+h3,h4,h5{
+	border: 2px solid purple;
+	color: blue;
+	background-color: DeepSkyBlue;
+}
 p.objective {
 	color: white;
 	font-size: 1.5em;
@@ -212,10 +220,7 @@ div.wrap {
 	/*max-width: 960px; */
 	/*width: 100%; */
 }
-/*div.objectives {
-	border: 2px solid #555;
-	padding: inherit;*/
-}
+
 div.information {
 	color: blue;
 }
@@ -252,18 +257,22 @@ article.topcontent {
   padding-top: 1.5%
   font-size: 0.9em;
   line-height: 1.5em;
-  background-color: white;
-  
+  /*background-color: white;*/
+  background-image: linear-gradient(
+      to right, #a1dbff 0%, #f0f9ff 16%, #a1dbff 33%,
+      #f0f9ff 50%, #a1dbff 67%, #f0f9ff 84%, #a1dbff 100%
+   );
 
 }
 sidebar, .sidebar-content {
-  width: 98%;
+  width: 99%;
   margin-right: 2%;
+  margin-left: 5%;
   float: right;
   clear: both;
   /*padding: 1%;*/
   padding-top: 10px;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1em;
   background-color: DeepSkyBlue;
    opacity: 0.9;
@@ -276,7 +285,6 @@ aside, section{
   padding-top: 2%;
   padding-bottom: 2%;
   padding-right: 8%;
-  /*background-color: #399077;*/
   margin-top: 30px;
   font-size: 1.1em;
   line-height: 1.3em;
@@ -293,22 +301,20 @@ aside, section{
  	margin-top: 5px;
  }
 
-/*p {
- width: 450px;
- position: relative;
- margin-left: 300px;
- text-decoration: none;
+ sidebar.services{
+ 	clear: both;
+ 	margin-bottom: 20%;
+ }
 
-}*/
 
 div.footer {
 	margin-top: 5px;
 	text-align: center;
 	padding: 0.5em;
-	color: #001;
+	color: white;
 	clear: both;
 	float: none;
-	background-color: #399077;
+	background-color: blue;
 }
 
 h6 {
@@ -321,7 +327,7 @@ h6 {
 	margin-top: 20px;
 }
 a {
-	border: 2px solid #399077 100%;
+	border: 2px solid blue 100%;
 	width: 100%;
 }
 
@@ -337,12 +343,13 @@ div.seasons {
 	clear: both;
 }
 div.icons {
-	/*position: relative;*/
-	/*float: left;*/
 	display: inline-block;
-	margin-top: -10px;
-	margin-left: 40%;
-	
+	margin-top: 2%;
+	margin-right: 40%;
+	border: 2px solid blue 100%;
+	text-align: center;
+	float: right;
+	clear: both;
 }
 
 /*div.content {
@@ -359,11 +366,12 @@ p.mountains {
 	clear: both;
 }
 p.vancouver-map {
-	float: left;
+	/*float: left;*/
 	margin-left: 20px;
 	margin-bottom: 20px;
 	font-style: italic;
 	clear: both;
+
 }
 
 p.winter {
@@ -377,7 +385,7 @@ p.text-center, p.objective {
 }
 #logo{
 	position: relative;
-	left: 16px;
+	left: 15%;
 }
 main.heading {
 	padding: 30px 20px;
@@ -396,18 +404,18 @@ main.heading {
 .container {
 	display: flex;
     width: 100%;
-    height: 50%;
-    max-width: 100%;
     text-align: center;
     justify-content: center;
-    background-image: linear-gradient(
+    background-color: DeepSkyBlue;
+    opacity: 0.9;
+   /* background-image: linear-gradient(
       to right, #a1dbff 0%, #f0f9ff 16%, #a1dbff 33%,
       #f0f9ff 50%, #a1dbff 67%, #f0f9ff 84%, #a1dbff 100%
-   );
+   );*/
 	 }
 	 .item {
-    background-color: cornflowerblue;
-    width: 50%;
+    background-color: blue;
+    width: 100%;
     height: 40%;
     margin: 30px 5px 5px 5px;
     color: white;
@@ -461,6 +469,7 @@ main.heading {
 	 }
 	 aside, section{
       width: 90%;
+      margin-top: 1px;
     }
 
 	nav.main ul.main-menu {

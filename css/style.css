@@ -8,6 +8,7 @@ body {
 	text-align: left;
 	margin: 0;
 	padding: 0;
+	
 
 }
 
@@ -116,7 +117,20 @@ p.requirments {
 	font-size: 1em;
 	text-align: center;
 }*/
-
+article.topcontent2 {
+	width: 80%;
+	margin-left: 5%;
+	margin-top: 10%;
+	padding: 3%;
+	clear: both;
+	background-image: linear-gradient(
+      to right, #a1dbff 0%, #f0f9ff 16%, #a1dbff 33%,
+      #f0f9ff 50%, #a1dbff 67%, #f0f9ff 84%, #a1dbff 100%
+   );
+}
+article.firstcontent {
+	clear: both;
+}
 
 .handle {
 	width: 100%;
@@ -262,7 +276,7 @@ article.topcontent {
       to right, #a1dbff 0%, #f0f9ff 16%, #a1dbff 33%,
       #f0f9ff 50%, #a1dbff 67%, #f0f9ff 84%, #a1dbff 100%
    );
-
+  
 }
 sidebar, .sidebar-content {
   width: 99%;
@@ -303,7 +317,8 @@ aside, section{
 
  sidebar.services{
  	clear: both;
- 	margin-bottom: 20%;
+ 	margin-bottom: 5%;
+ 	margin-top: 10%;
  }
 
 

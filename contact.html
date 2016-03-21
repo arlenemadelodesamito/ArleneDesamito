@@ -9,10 +9,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
+   
    <div class"wrap">
-         <img src="images/canada.flag.gif" width="150px" height="107px" />
-    </div>
+    
+   
   <div class="title">
+     <img src="images/canada.flag.gif" width="150px" height="107px" />
     <h1>Contact Details</h1>
   </div>
 
@@ -26,69 +29,111 @@
 	    	 </ul>
          <!--<div class="handle">MENU</div> -->
 	     </nav>
-  
 
-<div class="content-area">
-    <div class="content">
-	   
+       <div id="page">
+          <h1 id="header1">List of Contact Websites</h1>
+          <h2>Helpful Contact Resources</h2>
+          <ul>
+             <li id="one" class="hot"><em>New comers</em> Guide</li>
+            <li id="two" class="hot">bclibraries.ca</li>
+            <li id="three" class="hot">gov.bc.ca</li>
+            <li id="three" class="hot">bcstats.gov.bc.ca</li>
+           </ul>
+        </div>
+<!--<div class="content-area">
+    <div class="content"> -->
 
-	    <article class="topcontent">
-        <div class="paragraph">
+	    <!-- <article class="topcontent">
+        <div class="paragraph"> -->
 	      	<h3>ADDRESS:</h3>
 	  	    <p>4537 West 16th Ave.Vancouver, British Columbia. V6R 3E8</p>
 	  	    <h4>CONTACT NUMBER:</h4>
 	  	    <p><i class="fa fa-phone"></i>
           +01 604 2022 901</p>
 
+          <p class="email_add"><a href="mailto:arlene.desamito.ad@gmail.com">Email Us</a></p>
+          <p>arlene.desamto.ad@gmail.com</p>
+
           <p>Get in touch with me anytime if you have any questions. Want to make inquiry or say hello.</p>
            </div>
 
-	      </article>
-      </div>
-  </div>
-      
-      <section>
-          <div class="section">
-      <!--<div class="email"> -->
-      <p class="email_add"><a href="mailto:arlene.desamito.ad@gmail.com">Email Us</a></p>
-      <p>arlene.desamto.ad@gmail.com</p>
-      </div>
-      </section>
+	      </section>
+      <!-- </div>
+
+
+  </div> -->
+
         
-       <section>
-          <div class="section">
-            <form>
-              <legend>Personal information:</legend>
-             First name:<br>
-             <input type="text" name="firstname" size="40%">
-             <br>
-             Last name:<br>
-             <input type="text" name="lastname" size="40%">
-             <br>
-             <div class="row">
-            Your email:<br>
-            <input id="email" class="input" name="email" type="text" value="" size="40%" /><br>
-             Phone number:<br>
-             <input type="text" name="phonenumber" size="40%">
-             <br><br>
-             <button type="submit" value="Submit">Submit</button>
-            </form>
-          </div>
-        </section>
+      <article class="topcontent2">
+        <div class="paragraph">
+      <!--<section>
+          <div class="section"> -->
+        <form=id="my-form" action="submit-form.php">
+
+        <div>
+            <label for="message-type">Greetings:</label>
+            <select name="message-type" id="message-type">
+              <option value="hello">Friendly Hello!</option>
+              <option value="howareyou">How are You?</option>
+            </select>  
+        </div>
+
+
+        <legend>Personal information:</legend>
+
+        <label for ="firstname">First name: </label><br>
+        <input type="text" id="my-text-input" />
+        <br>
+        <label for ="lastname"> Last name: </label><br>
+        <input type="text" id="my-text-input" />
+        <br>
+        <div class="row">
+            <label for ="email"> Your email: </label><br>
+            <input type="text" id="my-text-input" /><br>
+        </div>
+        <label for ="phonenumber">Phone number:</label><br>
+        <input type="text" id="my-text-input" />
+        <br><br>
+
+        <form id="application-order">
+        <div id="choices">
+            <label for="application-items">What are you applying for?:</label>
+            <select id="immigrant-item">
+              <option value="">-- Pick one--</option>
+              <option value="student">Student</option>
+              <option value="workpermit">Workpermit</option>
+            </select>
+        </div>
+<div class="test">
+      <div id="student">
+        <input type="checkbox" id="visa" />
+        <label for="visa">Do you have a visa?</label>
+      </div>
+      <div id="workpermit">
+           <label for="employer">Do you already have employer?</label>
+           <select id="employer">
+           <option value="yes">YES</option>
+           <option value="no">NO</option>
+         </select>
+      </div>
+</div>
+       </form>
+
+            <div>
+          <label for="message1">
+             Your Message: </label><br>
+             <textarea name="message" id="my-text-input" size="80" rows="15%"></textarea></br>
+            </div>
+
+        <input type="submit" />
+        
+          </form>
+        </div> 
+
+      </article>
 
        <hr>
-
-       <sidebar class= "services">
-        <nav>
-        <ul>
-           <a href="#"><li>Our Services</li></a>
-           <a href="#"><li>Our methods</li></a>
-           <a href="#"><li>Testimonials</li></a>
-           <a href="#"><li>FAQ</li></a>
-         </ul>
-        </nav>
     
-
        <div class="icons">
        <h4>Connect Online</h4>
        <p class="icons"><i class="fa fa-facebook-official" style="font-size:40px;color:white;"></i>
@@ -98,8 +143,12 @@
       </p>
       </div>
       </sidebar>
+     
 
     <div class="footer">&copy 2016 Arlene Desamito.</div>
-        
+
+    
+<script src="js/jquery-2.2.2.js"></script>
+<script src="js/main.js"></script>    
 </body>
 </html>

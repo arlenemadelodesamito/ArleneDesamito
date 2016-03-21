@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
 	  <title>CANADA GUIDES</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen"/>
@@ -11,38 +11,47 @@
 <body>
 	  <div class="wrap">
       <header class="about">
-      <div class="img">
-       <a href"#"><img src="images/canada.flag.gif" alt="ca" width="400" height="200"></a>
-       <a href"#"><img src="images/canada_map.gif" width="400" height="200" ></a>
-      </div>
-     </header>
-    
+         <div class="img">
+              <a href"#"><img src="images/canada.flag.gif" alt="flag" width="150" height="107"></a>
+             <a href"#"><img src="images/canada_map.gif" alt="map"width="150" height="107" ></a>
+             </div>
+      </header>
+
     <div class="title">
-		  <h1>CANADA GUIDES</h1>
-      <p><i class="fa fa-facebook-official" style="font-size:40px;color:white;"></i>
+		  <h1>CANADA GUIDES</h1><br />
+
+      <!-- <p><i class="fa fa-facebook-official" style="font-size:40px;color:white;"></i>
         <i class="fa fa-linkedin-square" style="font-size:40px;color:white;"></i>
        <i class="fa fa-rss-square" style="font-size:40px;color:white;"></i>
         <i class="fa fa-google-plus-square" style="font-size:40px;color:white;"></i>
-      </p>
+      </p> -->
 
-     </div>
+      <div id="message">"WELCOME TO OUR SITE!"</div> 
 
-	    <nav class="main">
-	    	<ul class="main-menu">
-           <a href="index.html"><li>Home</li></a>
-	    	   <a href="about.html"><li>About Us</li></a>
-	    	   <a href="contact.html"><li>Contact Us</li></a>
-	    	  <!-- <a href="#our blog"><li>Our Blog</li></a> -->
-	    	 </ul>
-         <!--<div class="handle"><i class="fa fa-bars"></i>
-         <button onclick="myFunction()">Menu</button></div> -->
+   </div>
 
-	     </nav>
- 
-       <form id="searchbox" action="">
+      <!-- <form id="searchbox" action="submit-form.php">
         <input id="search" type="text" placeholder="Type here">
-        <input id="submit" type="submit" value="Search">
-       </form>
+        <input id="submit" type="submit" value="Search" onclick="" />
+        <a href="arlene.desamito.ad@gmail.com: submitform()"></a>
+       </form> -->
+
+	    <nav>
+	    	<ul class="main-menu1"> 
+           <a id="home" href="index.html"><li>Home</li></a>
+	    	   <a id="about" href="about.html"><li>About Us</li></a>
+	    	   <a id="contact" href="contact.html"><li>Contact Us</li></a>
+	    	</ul> 
+         <!-- <div class="handle"><i class="fa fa-bars"></i> 
+      <div class="handle"> -->
+        <!-- <button onclick="myFunction()">Menu</button></div> -->
+	     </nav> 
+         
+         <div id="homeSection" class="firstsection"></div>
+         <div id="aboutSection" class="secondsection"></div>
+         <div id="contactSection" class="thirdsection"></div>
+        <!-- <p id ="sayHello"></p>  -->
+
 
          <section>
           <div class="section">
@@ -57,6 +66,7 @@
           <div class="content">
 
 	        	<article class="topcontent">
+
                <p>Canada is a country in the northern part of  <span style="color:red;font-weight:bold;font-style:italic;">North America</span>. Canadians are so kind. A place for a better future.Canada is such a gorgeous country, it's no wonder that it is one of the top ten most popular places for international tourists. Spend your loonies here, travel in Canada! Canada is the World's Most Educated Country: over half its residents have college degrees.</p>
                
 
@@ -82,9 +92,21 @@
 
 
            <h3>REQUIREMENTS FOR APPLYING:</h3>
-           <p class="requirments"><i>(Caregiver)</i></p>
+           <div id="requirment-choices">
+            <label for="requirments">Choose one:</label>
+            <select id="requirement-option">
+              <option value="">-- Pick one--</option>
+              <option value="caregiver">Caregiver</option>
+              <option value="immigrant">Immigrant</option>
+              <option value="student">Student</option>
+            
+            </select>
+          </div>
 
-              <ul>
+      <div class="requirment-for-application">   
+          <div id="caregiver">
+            <p class="requirments"><i>(Caregiver)</i></p>
+            <ul>
               	<li>Labour Market Impact Assesment provided by employer in Canada</li>
               	<li>Caregiver certificate or a refference letter from employer outside foriegn countries.</li>
               	<li>Original Copy of Passport</li>
@@ -94,8 +116,10 @@
               	<li>2x2 photos</li>
               	<li>Original copy of Birth Certificate</li>
               	<li>Medical Certificate</li>
-              </ul>
+            </ul>
+          </div>
 
+          <div id="immigrant">
               <p class="requirments"><i>(Immigrant)</i></p>
                 <ul>
                    <li>your passport or travel document</li>
@@ -107,6 +131,10 @@
                      <li>Police Clearance</li>
                      <li>Medical Certificate</li>
                   </ul>
+
+             </div>
+             
+             <div id="student2">     
                 <p class="requirments"><i>(Student)</i></p>
                     <ul>
                     	<li>You must have been accepted by a designated learning institution in Canada.</li>
@@ -121,6 +149,9 @@
                           <li>You must be in good health and willing to complete a medical examination, if necessary.</li>
                           <li> You must satisfy an immigration officer that you will leave Canada at the end of your authorized stay.</li>
                     </ul>
+
+              </div>
+          </div>         
               <h4>Arrived to Canada</h4>
               <p>Most people or newcomers are exited about their new life in Canada.But after in a short time they get worried and irritable because its often difficult to find jobs,housing, and school.New comers may feel anxiuos or depressed but their is also a lot of things to know and to be prepared. when you start to discover the country it is a great opportunity to start a new life with such a great people and cities.</p>
               <p><b><i>Things you should know...</i></b></p><b/>
@@ -182,9 +213,10 @@
         </figure>
 
 		<div class="seasons"><p>There are so many nice places to visit in Canada. The mountains are amazing. Canada has for seasons, <span style="color: blue;font-weight:bold;font-style:italic;"> Winter, Summer, Spring and Fall.</p></div>
+   
 
         <div class="footer">&copy 2016 Arlene Desamito.</div>
-
-
+<script src="js/jquery-2.2.2.js"></script>
+<script src="js/main.js"></script> 
 </body>
 </html>

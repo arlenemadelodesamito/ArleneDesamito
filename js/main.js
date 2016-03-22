@@ -4,7 +4,7 @@ $('.requirment-for-application').hide();
 $(document).ready(function() {
 $('#my-form').on('submit', function(event) {
    event.preventDefault();
-   if ( $('#my-text-input').val() == '' ) {
+   if ( $('#my-text-input').val() == 'null' ) {
       alert('You missed the field.');
    } else {
       alert('Thanks for filling the field!');
@@ -23,7 +23,7 @@ $('#immigrant-item').on('change', function() {
   } else {
 	  $('#student, #workpermit').hide('slow');
   }
-});
+}); 
  
  $('#requirement-option').on('change', function() {
 	$('.requirment-for-application').show();
@@ -48,5 +48,44 @@ $('#immigrant-item').on('change', function() {
 	  $('#student2, #immigrant, #caregiver').hide('slow');
   }
 });
+
+ $.fn.visible = function(partial) {
+    
+      var $t            = $(this),
+          $w            = $(window),
+          viewTop       = $w.scrollTop(),
+          viewBottom    = viewTop + $w.height(),
+          _top          = $t.offset().top,
+          _bottom       = _top + $t.height(),
+          compareTop    = partial === true ? _bottom : _top,
+          compareBottom = partial === true ? _top : _bottom;
+    
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+  };
+
+ $(window).scroll(function(event) {
+ 	var $moving_block = $('.mountains');
+ 	if($moving_block.visible(true)){
+ 		$moving_block.addClass('come-in');
+ 	}
+
+ });
+
+  $(window).scroll(function(event) {
+ 	var $moving_block = $('.winter');
+ 	if($moving_block.visible(true)){
+ 		$moving_block.addClass('come-in');
+ 	}	
+
+ });
+
+  $(window).load(function(event) {
+ 	var $moving_block = $('.message');
+ 	if($moving_block.visible(true)){
+ 		$moving_block.addClass('come-in');
+ 	}	
+
+ });
 
 });

@@ -1,15 +1,20 @@
 $('.test').hide();
 $('.requirment-for-application').hide();
 
+
 $(document).ready(function() {
-$('#my-form').on('submit', function(event) {
-   event.preventDefault();
-   if ( $('#my-text-input').val() == 'null' ) {
-      alert('You missed the field.');
-   } else {
-      alert('Thanks for filling the field!');
-   }
-});
+
+  /*var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+window.onload=function() {
+  document.getElementById("form1").onsubmit=function() {
+    if(!this.email.value.match(mailformat)) {  
+     alert("You have entered an invalid email address!");  
+     this.email.focus();  
+     return false;  
+    }
+    return true;  
+  } 
+}*/
 
 $('#immigrant-item').on('change', function() {
 	$('.test').show();

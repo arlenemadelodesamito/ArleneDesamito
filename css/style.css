@@ -95,7 +95,26 @@ nav.main ul.main-menu li {
 	display: inline-block;
 	padding: 10px;
 	color: white;
+	border: 4px solid #004D47;
+	background-color: #128277;
+	transition-property: background;
+	transition-duration: 2s;
+    transition-timing-function: linear;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+
 }
+nav.main ul.main-menu li:hover{
+	width: 80px;
+	height: 30px;
+	background-color: #217CA3;
+}
+
+/*nav.main:hover, ul.main-menu:hover{
+	 border-radius: 5%;
+	 background: #004D47;
+
+}*/
 /*nav {
 	border: 2px solid blue;
 }*/
@@ -163,7 +182,7 @@ article.firstcontent {
 .handle {
 	width: 100%;
 	/*background: #399077;*/
-	text-align: left;
+	/*text-align: left;
 	box-sizing: border-box;
 	padding: 25px 20px;
 	cursor: pointer;
@@ -177,7 +196,7 @@ article.firstcontent {
     background: -webkit-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
     background: -o-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
     background: -ms-linear-gradient(top,  #4569b2 0%,#4062a5 100%);
-    background: linear-gradient(to bottom,  #4569b2 0%,#4062a5 100%);
+    background: linear-gradient(to bottom,  #4569b2 0%,#4062a5 100%);*/
 }
 
 
@@ -194,36 +213,32 @@ nav, nav.main, a:link, ul.main-menu, a:visited{
 nav, nav.main, a:hover, nav.main, a:active,
 nav.main .active a:link, nav.active a:visited {
 	background-color: #34888c;
-	text-shadow: none;
-
+	/*text-shadow: none;*/
+    
 }
 
 
-
-/*h1{
-	background-color: #399077;
-	height: 30px;
-	color: white;
-	border-radius: 5px;
-}*/
 
 h1 h2, h3 {
 	color: white;
 	position: relative;
 	right: auto;
 	text-align: left;
+	margin-left: 2%;
 }
 h2, h4, h5, div.rights{
 	text-align: center;
-	color: blue;
+	color: #004D47;
 	font-size: 1.3em;
 	font-style: bold;
+	text-shadow: 0px 2px 3px #666;
 
 }
-h3,h4,h5,.header1{
+
+h3,h4,h5,h6{
 	/*border: 2px solid purple;*/
-	color: blue;
-	background-color: #A1D6E2;
+	color: #004D47;
+	/*background-color: #A1D6E2;*/
 }
 p.objective {
 	color: white;
@@ -231,11 +246,12 @@ p.objective {
 }
 
 h5 {
-	text-align: center;
+	text-align: left;
+	margin-left: 40px;
 	font-family: Georgia, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
-	color: blue;
+	color: #004D47;
 }
 
 
@@ -246,12 +262,12 @@ blockquote {
 	font-size: 16px;
 	font-family: verdana;
 	quotes: none;
-	color: purple;
+	color: #004D47;
 	font-size: 1em;
 	line-height: 1.5em;
 
 }
-div.content-area, p {
+/*div.content-area,*/ p {
 	color: blue;
 	margin-top: 5px;
 	padding: 2%;
@@ -266,13 +282,24 @@ div.wrap {
 
 }
 
+/*#selection{
+	width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    /*transition: width 2s;
+}*/
+/*#selection:hover {
+	width: 300px;
+}*/
+
 div.information {
 	color: blue;
 }
 
-div.content {
+/*div.content {
   padding: 1%;
-}
+}*/
 
 
 nav ul li{
@@ -281,7 +308,7 @@ nav ul li{
 	margin-top: 20px;
 	margin-bottom: 50px;
 	/*overflow: hidden;*/
-	-webkit-transition: width 1s; 
+	/*-webkit-transition: width 1s; */
 }
 
 
@@ -289,7 +316,7 @@ ul, ol, li {
 	list-style-type: none;
 	padding-left: 10px;
 	text-align: left;
-	color: purple;
+	color: blue;
 }
 
 
@@ -302,7 +329,7 @@ ol{
 
 article.topcontent {
   /*width: 52%;*/
-  margin-right: 5%;
+  /*margin-right: 5%;*/
   float: left;
   padding: 1%;
   padding-top: 1.5%
@@ -374,7 +401,7 @@ aside, section{
   line-height: 1.3em;
   box-shadow: 5px 5px 5px #666;
   border-radius: 10px;
-  background-color: DeepSkyBlue;
+  background-color: #66A5AD;
    opacity: 0.9;
  }
 
@@ -386,35 +413,35 @@ div.footer {
 	color: white;
 	clear: both;
 	float: none;
-	background-color: blue;
+	background-color: #1e656d;
 }
 
 h6 {
 	text-align: center;
-	color: blue;
+	color: #004D47;
 	font-family: Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 30px;
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
-a {
+/*a {
 	border: 2px solid blue 100%;
 	width: 100%;
-}
+}*/
 
-ul.links:hover, ul.links:active,
+/*ul.links:hover, ul.links:active,
 ul.links:link, ul.links:visited {
 	background-color:  #66A5AD ;
 	text-shadow: none;
 
-}
+}*/
 
 div.seasons {
 	margin-top: 30px;
 	clear: both;
 }
-div.icons {
+/*div.icons {
 	display: inline-block;
 	margin-top: 2%;
 	margin-right: 40%;
@@ -422,7 +449,7 @@ div.icons {
 	text-align: center;
 	float: right;
 	clear: both;
-}
+}*/
 
 /*div.content {
 	margin-bottom: 20px;
@@ -476,11 +503,11 @@ main.heading {
 	font-size: 1.3em;
 
 }
-.add{
+/*.add{
 	border: 2px solid #399077;
 	background-color: white;
-}
-.container {
+}*/
+/*.container 
 	display: flex;
     width: 100%;
     text-align: center;
@@ -490,9 +517,9 @@ main.heading {
    /* background-image: linear-gradient(
       to right, #a1dbff 0%, #f0f9ff 16%, #a1dbff 33%,
       #f0f9ff 50%, #a1dbff 67%, #f0f9ff 84%, #a1dbff 100%
-   );*/
-	 }
-	 .item {
+   );
+	 }*/
+	 /*.item {
     background-color: blue;
     width: 100%;
     height: 40%;
@@ -501,19 +528,22 @@ main.heading {
     text-align: center;
     max-width: 100%;
  
-}
+}*/
 
- form {
+/* form {
  	text-align: center;
- }
+ }*/
  div.objectives {
  	float: left;
  }
 
-  
+ #page {
+ 	margin-left: 2%;
+ 	color: blue;
+ } 
  
 
-#contact-form {
+/*#contact-form {
   font-family: Arial, sans-serif;
   width: 500px;
   margin: 25px auto 20px;
@@ -521,11 +551,11 @@ main.heading {
   background-image: linear-gradient(to top,#f0f9ff 10%,#cbebff 50%,#a1ebff 100%);
   box-shadow: 5px 5px 5px #222;
   border-radius: 10px;
-}
+}*/
 
-#contact-form > div {
+/*#contact-form > div {
   margin-bottom: 20px;
-}
+}*/
 
 label {
   color: #262873;
@@ -573,7 +603,7 @@ textarea {
   width: 98%;
 }
 
-input[type="submit"] {
+/*input[type="submit"] {
   background-color: blue;
   border: 0;
   border-radius: 10px;
@@ -589,7 +619,7 @@ input[type="submit"]:hover,
 input[type="submit"]:active {
   background-color: blue;
   box-shadow: 2px rgba(5, 8, 8, 0.6);
-}
+}*/
 
 /*end*/
 @media screen and (min-width: 480px) {
@@ -612,7 +642,7 @@ input[type="submit"]:active {
 
 
 	 aside, section{
-      width: 32%;
+      width: 42%;
       margin-top: 1px;
       
     }
@@ -697,6 +727,7 @@ input[type="submit"]:active {
 		background-color: #cbebff;
 	    width: 100%
 	 }
+
 	 nav.main ul.main-menu {
 	 	max-height: 100%;
 	 }
@@ -706,16 +737,11 @@ input[type="submit"]:active {
       float: left;
 	 }
 	 aside, section{
-      width: 45%;
+      /*width: 45%;*/
       float: right;
 
      }
-	 /* nav.main ul.home li{
-	 	box-sizing: border-box; 
-	 	width: 100%;
-	 	padding: 10px; 
-	 	text-align: left; */
-	 }
+	
 	 /*.handle {
 	 	display: block;*/
 	 }

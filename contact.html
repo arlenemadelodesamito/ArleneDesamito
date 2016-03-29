@@ -5,7 +5,7 @@
   
   <link rel="stylesheet" href="css/reset.css" type="text/css" media="only screen"/>
 	<link href="css/style.css" rel="stylesheet" type="text/css"  media="only screen"/>
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -15,8 +15,8 @@
     
    
   <div class="title">
-     <img src="images/canada.flag.gif" width="150px" height="107px" />
-    <h1>Contact Details</h1>
+     <img src="images/canada.flag.gif" alt="canada-flag"width="150px" height="107px" />
+    <div class="message"><h1>Contact Details</h1></div>
   </div>
 
 	<div class="wrapper">
@@ -29,22 +29,18 @@
 	    	 </ul>
          <!--<div class="handle">MENU</div> -->
 	     </nav>
-
+  </div>
        <div id="page">
           <h1 id="head">List of Contact Websites</h1>
           <h2>Helpful Contact Resources</h2>
-          <ul>
-             <li id="one" class="hot"><em>New comers</em> Guide</li>
-            <li id="two" class="hot">bclibraries.ca</li>
-            <li id="three" class="hot">gov.bc.ca</li>
-            <li id="three" class="hot">bcstats.gov.bc.ca</li>
+          <ul class="links">
+             <li id="one" class="hot"><a href="https://www.welcomebc.ca/Start-Your-Life-in-B-C/Newcomers-Guides"><em>New comers</em> Guide.ca</a></li>
+             <li id="two" class="hot"><a href="http://www.collectionscanada.gc.ca/010/010-200-e.html">bclibraries.ca</a></li>
+             <li id="three" class="hot"><a href="https://www.canada.ca/en.html">gov.bc.ca</a></li>
+             <li id="three" class="hot"><a href="http://www.statcan.gc.ca/start-debut-eng.html">bcstats.gov.bc.ca</a></li>
            </ul>
         </div>
-<!--<div class="content-area">
-    <div class="content"> -->
 
-	    <!-- <article class="topcontent">
-        <div class="paragraph"> -->
 	      	<h3>ADDRESS:</h3>
 	  	    <p>4537 West 16th Ave.Vancouver, British Columbia. V6R 3E8</p>
 	  	    <h4>CONTACT NUMBER:</h4>
@@ -58,17 +54,12 @@
            </div>
 
 	      </section>
-      <!-- </div>
-
-
-  </div> -->
 
         
       <article class="topcontent2">
         <div class="paragraph">
-      <!--<section>
-          <div class="section"> -->
-        <form=id="my-form" action="submit-form.php">
+     
+      <form action="mailer.php" id="form1" onsubmit="return mysubmitcheck()"name="form1" method="POST">
 
         <div>
             <label for="message-type">Greetings:</label>
@@ -79,7 +70,7 @@
         </div>
 
 
-        <legend>Personal information:</legend>
+        <h5>Personal information:</h5>
 
         <label for ="firstname">First name: </label><br>
         <input type="text" id="my-text-input" />
@@ -92,7 +83,7 @@
             <input type="text" id="my-text-input" /><br>
         </div>
         <label for ="phonenumber">Phone number:</label><br>
-        <input type="text" id="my-text-input" />
+            <input type="text" id="my-text-input" />
         <br><br>
 
         <form id="application-order">
@@ -124,8 +115,9 @@
              Your Message: </label><br>
              <textarea name="message" id="my-text-input" size="80" rows="15%"></textarea></br>
             </div>
+        <button onclick="ValidateEmail(document.form1.email); return false" href="arlene.desamito.ad@gmail.com">Submit</button>
 
-        <input type="submit" />
+        <!--<input type="submit" /> -->
         
           </form>
         </div> 

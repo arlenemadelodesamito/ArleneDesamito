@@ -727,7 +727,6 @@ input[type="submit"]:active {
 		background-color: #cbebff;
 	    width: 100%
 	 }
-
 	 nav.main ul.main-menu {
 	 	max-height: 100%;
 	 }
@@ -741,7 +740,12 @@ input[type="submit"]:active {
       float: right;
 
      }
-	
+	 /* nav.main ul.home li{
+	 	box-sizing: border-box; 
+	 	width: 100%;
+	 	padding: 10px; 
+	 	text-align: left; */
+	 }
 	 /*.handle {
 	 	display: block;*/
 	 }
